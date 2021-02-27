@@ -1,0 +1,158 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: lightgray;
+}
+
+.header{
+    text-align: center;
+    background-color: tomato;
+    padding: 14px 15px;
+    overflow: hidden;
+}
+
+.header a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    text-transform: capitalize;
+ 
+    padding: 50px;
+    
+}
+
+    
+
+.header a:hover{
+  color: rgb(8, 8, 8);
+  background-color: rgb(219, 178, 14) ;
+  box-sizing: content-box;
+  border: 1px solid black;
+
+}
+
+.header a:hover :active{
+   color: blue;
+}
+
+#navbar{
+    display: none;
+}
+
+#toglearea{
+    background-color: tomato;
+    text-align: end;
+    padding: 8px 8px;
+    border-radius: 5px;
+}
+
+#toglearea span{
+
+    color: black;
+    height: 8px;
+
+}
+
+.suri{
+    padding-right: 45%;
+    font-size: large;
+    text-transform: capitalize;
+    font-family: 'Potta One', cursive;
+    font-size: 20px;
+    color: white;
+    text-decoration: underline;
+}
+
+#toglearea{
+    display: none;
+}
+
+
+.image-header{
+
+width: 100%;
+height: auto;
+
+
+}
+
+
+
+
+
+  footer {
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(47, 140, 177);
+    color: white;
+  }
+
+
+  .header3{
+      text-align: center;
+      text-transform: capitalize;
+      background-color: rgb(82, 82, 245);
+      color: white;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 10px;
+      font-family: 'Bebas Neue', cursive;
+  }
+
+  .pera1{
+      text-align: justify;
+      background-color: white;
+      padding: 10px ;
+      margin: 10px;
+      font-family: 'Pathway Gothic One', sans-serif;
+  }
+
+  .image6{
+      padding: 10px;
+      margin: 10px;
+      
+  }
+   
+
+  .pera1 img{
+      width: 100%;
+      height: auto;
+      
+  }
+
+  .pera1 span{
+      text-align: center;
+     display: flex;
+      align-items: center;
+  }
+ 
+
+
+@media screen and (max-width: 835px){
+
+     .header{
+         display: none;
+     }
+
+    .header a{
+       flex-direction: column ;
+       display: flex;
+       padding: 10px;
+     display: none;
+    }
+   
+    #navbar:checked + .header a{
+        display: flex;
+    }
+  
+    #navbar:checked +.header{
+        display: flex;
+        flex-direction: column ;
+    }
+
+  #toglearea{
+      display: contents;
+  }
+}
